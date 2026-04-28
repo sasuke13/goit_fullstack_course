@@ -1,0 +1,16 @@
+2026-03-31 21:05:03,286 - DEBUG - here is the message: debug message
+2026-03-31 21:05:03,286 - INFO - here is the message: info message
+2026-03-31 21:05:03,286 - WARNING - here is the message: warning message
+2026-03-31 21:05:03,286 - ERROR - here is the message: error message
+2026-03-31 21:05:03,286 - CRITICAL - here is the message: critical message
+2026-03-31 21:07:43,322 - DEBUG - here is the message: debug message
+2026-03-31 21:07:43,322 - INFO - here is the message: info message
+2026-03-31 21:07:43,322 - WARNING - here is the message: warning message
+2026-03-31 21:07:43,323 - WARNING - here is the message: warning message
+2026-03-31 21:07:43,323 - ERROR - here is the message: Error: This is a test exception
+2026-03-31 21:07:43,323 - CRITICAL - here is the message: critical message
+2026-03-31 21:07:52,235 - INFO - here is the message: info message
+2026-03-31 21:07:52,235 - WARNING - here is the message: warning message
+2026-03-31 21:07:52,235 - WARNING - here is the message: warning message
+2026-03-31 21:07:52,235 - ERROR - here is the message: Error: This is a test exception
+2026-03-31 21:07:52,235 - CRITICAL - here is the message: critical message

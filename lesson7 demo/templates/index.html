@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FastAPI Upload Form</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <main class="container">
+    <h1>Завантаження файлу</h1>
+    <p>Демо-форма для маршруту <code>/upload-from-form</code>.</p>
+    <form action="/upload-from-form" enctype="multipart/form-data" method="post">
+      <input type="file" name="file" required>
+      <button type="submit">Надіслати файл</button>
+    </form>
+  </main>
+</body>
+</html>

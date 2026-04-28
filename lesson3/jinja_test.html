@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        {% for receiver in receivers_list %}
+            {% if receiver.age > 21 %}
+                <li>Hello, {{receiver.name}}! You are an adult!</li>
+            {% else %}
+                <li>Hello, {{receiver.name}}! You are a minor!</li>
+            {% endif %}
+        {% endfor %}
+    </ul>
+</body>
+</html>

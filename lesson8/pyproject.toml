@@ -1,0 +1,37 @@
+[tool.poetry]
+name = "lesson-8"
+version = "0.1.0"
+description = "FastAPI REST API demo with notes and tags"
+authors = ["GoIT Student <student@example.com>"]
+readme = "README.md"
+packages = [{ include = "src" }]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.115.0"
+uvicorn = { extras = ["standard"], version = "^0.30.6" }
+sqlalchemy = "^2.0.36"
+asyncpg = "^0.30.0"
+pydantic = "^2.9.2"
+pydantic-settings = "^2.6.1"
+alembic = "^1.13.3"
+greenlet = "^3.4.0"
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.6.9"
+black = "^26.3.1"
+isort = "^8.0.1"
+flake8 = "^7.3.0"
+flake8-pyproject = "^1.2.3"
+
+[tool.poetry.scripts]
+start = "src.main:main"
+seed = "src.db.seed:run_seed"
+
+[tool.flake8]
+max-line-length = 88
+extend-ignore = ["E203", "W503"]
+
+[build-system]
+requires = ["poetry-core>=1.9.0"]
+build-backend = "poetry.core.masonry.api"
